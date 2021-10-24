@@ -1,30 +1,48 @@
 ﻿using System;
 
-namespace Data_Types_and_Variables
+namespace Boolean_Variable
 {
     class Program
     {
-        static void Main(string[] args)
+        
+
+        static void testDevi(string value)
         {
-        Console.WriteLine("Data Types and Variables");
-            sbyte number1 = -100;
-            Console.WriteLine(number1);
-            byte number2 = 128;
-            Console.WriteLine(number2);
-            short number3 = -3580;
-            Console.WriteLine(number3);
-            ushort number4 = 64876;
-            Console.WriteLine(number4);
-            uint number5 = 2147483648;
-            Console.WriteLine(number5);
-            long number6 = -1141583228;
-            Console.WriteLine(number6);
-            long number7 = -1223372036854775808;
-            Console.WriteLine(number7);
+            bool a = Convert.ToBoolean(value);
+            if (a)
+            {
+                Console.WriteLine("Yes");
+            } else
+            {
+                Console.WriteLine("No");
+            }
+        }
 
+      
+        public static void Main(string[] args)
+        {
+           Console.WriteLine("Boolean Variable");
+           Program.testDevi("true");
+            Program.testDevi("false");
+           
+            /*
+           if (args.Length<=0)
+                {
 
+                Console.WriteLine("No args passed");
 
-
+            } else { 
+            bool a = Convert.ToBoolean(args[0]);
+            
+            if (a)
+            {
+                Console.WriteLine("Yes");
+            } else if (!a)
+            {
+                Console.WriteLine("No");
+            }
+            }
+            */
 
         }
     }
