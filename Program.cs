@@ -1,49 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Boolean_Variable
+namespace method_in_c_sharp
 {
     class Program
     {
-        
 
-        static void testDevi(string value)
+
+        static void Main(string[] args)
         {
-            bool a = Convert.ToBoolean(value);
-            if (a)
-            {
-                Console.WriteLine("Yes");
-            } else
-            {
-                Console.WriteLine("No");
-            }
-        }
-
-      
-        public static void Main(string[] args)
-        {
-           Console.WriteLine("Boolean Variable");
-           Program.testDevi("true");
-            Program.testDevi("false");
-           
-            /*
-           if (args.Length<=0)
-                {
-
-                Console.WriteLine("No args passed");
-
-            } else { 
-            bool a = Convert.ToBoolean(args[0]);
+            //createing an object Create an object of the student Class (this will call the constructor)
+            string[] subject = { "science", "math", "english" };
+            Student raga = new Student("Raga", "virologist", subject, "dte", "ragav.com", "2482574098");
+            raga.fullname = "ragavarshini";
+            raga.myPrint();
+            Student yash = new Student("yash", "veternerian", subject, "msu", "yash@.com", "2482764352");
+            yash.myPrint();
+            Student venk = new Student("venk", "softwareeng", subject, "wayne", "ram@.com", "2542565432");
+            venk.myPrint();
+            Student shree = new Student("shree", "healthcare", subject, "madras", "shree@.com", "248234267");
+            shree.myPrint();
             
-            if (a)
-            {
-                Console.WriteLine("Yes");
-            } else if (!a)
-            {
-                Console.WriteLine("No");
-            }
-            }
-            */
 
         }
+
     }
+
 }
